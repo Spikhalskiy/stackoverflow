@@ -52,12 +52,4 @@ public class MyObjectActiveRepository {
         }
         return this.groupNameToActiveEntity.get(groupName);
     }
-
-    public String getGroup(MyObject myObject) {
-        try {
-            return (String) groupField.get(myObject);
-        } catch (IllegalAccessException e) {
-            throw new RuntimeException(e);
-        }
-    }
 }
